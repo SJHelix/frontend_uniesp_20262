@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Desafios de Cabedelo</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Cadastro de Problemas</h1>
+        <p>Envie informações sobre problemas encontrados em Cabedelo - PB</p>
+    </header>
+
+    <main>
+        <h2>Registrar um problema</h2>
+
+        <p>
+            Utilize o formulário abaixo para registrar informações sobre
+            problemas de infraestrutura, mobilidade, saneamento, acessibilidade
+            ou outros desafios encontrados no município.
+        </p>
+
+        <form action="dados_recebidos.html" method="get">
+
+            <h3>Dados do cidadão</h3>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"><br>
+
+            <h3>Localização do problema</h3>
+
+            <fieldset>
+                <legend>Selecione o bairro</legend>
+
+                <label>
+                    <input type="radio" name="bairro" value="Camalaú">
+                    Camalaú
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Camboinha">
+                    Camboinha
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Centro">
+                    Centro
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Formosa">
+                    Formosa
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Intermares">
+                    Intermares
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Jacaré">
+                    Jacaré
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Poço">
+                    Poço
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Portal do Poço">
+                    Portal do Poço
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Renascer">
+                    Renascer
+                </label><br>
+
+                <label>
+                    <input type="radio" name="bairro" value="Outro">
+                    Outro
+                </label>
+
+            </fieldset>
+
+            <h3>Informações sobre o problema</h3>
+
+            <label for="categoria">Categoria:</label><br><br>
+            
+            <input type="radio" name="categoria" id="categoria" value="alagamento">Alagamento
+
+            <p>Pavimentação</p>
+            <input type="radio" name="categoria" id="categoria" value="pavimentacao">
+
+            <p>Trânsito e mobilidade</p>
+            <input type="radio" name="categoria" id="categoria" value="transito">
+
+            <p>BR-230</p>
+            <input type="radio" name="categoria" id="categoria" value="br230">
+            
+            <p>Saneamento básico</p>
+            <input type="radio" name="categoria" id="categoria" value="saneamento">
+            
+            <p>Acessibilidade</p>
+            <input type="radio" name="categoria" id="categoria" value="acessibilidade">
+            
+            <p>Iluminação pública</p>
+            <input type="radio" name="categoria" id="categoria" value="iluminacao">
+            
+            <p>Limpeza urbana</p>
+            <input type="radio" name="categoria" id="categoria" value="limpeza">
+            
+            <p>Outros</p>
+            <input type="radio" name="categoria" id="categoria" value="outros"><br><br>
+            
+
+            <label for="descricao">Descrição do problema:</label><br>
+            <textarea id="descricao" name="descricao" rows="8" cols="60" required></textarea><br><br>
+
+            <label for="data">Data em que o problema foi observado:</label><br>
+            <input type="date" id="data" name="data"><br><br>
+
+            <label for="urgencia">Nível de urgência:</label><br>
+            <select id="urgencia" name="urgencia">
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select> <br><br>
+
+            <input type="submit" value="Enviar cadastro">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Projeto informativo sobre os desafios urbanos de Cabedelo - PB.</p>
+    </footer>
+
+</body>
+</html>
